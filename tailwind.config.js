@@ -1,11 +1,17 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: false,
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ["Fira Sans", "sans-serif"],
+      mono: ['"JetBrains Mono"', "monospace"],
+      display: ["futura-pt-bold"],
+      body: ["Futura PT Sans", "sans-serif"]
+    },
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
-}
+  plugins: []
+};
