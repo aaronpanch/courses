@@ -1,0 +1,8 @@
+.prose-headings h1,
+.prose-headings h2,
+.prose-headings h3,
+.prose-headings h4,
+.prose-headings h5,
+.prose-headings h6 {
+  @apply font-display;
+}

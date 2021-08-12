@@ -1,13 +1,11 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import ReactMarkdown from "react-markdown";
+import classNames from "classnames";
 
-import HeadingOne from "components/HeadingOne";
 import { getCourseBySlug, listCourseSlugs } from "lib/api";
 
-const components = {
-  h1: HeadingOne,
-};
+import proseStyles from "styles/prose.module.css";
 
 export default function Course({ course }) {
   const router = useRouter();
@@ -17,7 +15,11 @@ export default function Course({ course }) {
   }
 
   return (
-    <ReactMarkdown components={components}>{course.content}</ReactMarkdown>
+    <article
+      className={classNames("prose m-auto", proseStyles["prose-headings"])}
+    >
+      <ReactMarkdown>{course.content}</ReactMarkdown>
+    </article>
   );
 }
 
