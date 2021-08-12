@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import ReactMarkdown from "react-markdown";
 
-import HeadingOne from "../../components/HeadingOne";
-import { getCourseBySlug, listCourseSlugs } from "../../lib/api";
+import HeadingOne from "components/HeadingOne";
+import { getCourseBySlug, listCourseSlugs } from "lib/api";
 
 const components = {
   h1: HeadingOne,

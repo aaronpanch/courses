@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import { getCourses } from "../lib/api";
+import { getCourses } from "lib/api";
 
 export default function Home({ courses }) {
   return (
