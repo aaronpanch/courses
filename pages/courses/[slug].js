@@ -2,7 +2,12 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import ReactMarkdown from "react-markdown";
 
+import HeadingOne from "../../components/HeadingOne";
 import { getCourseBySlug, listCourseSlugs } from "../../lib/api";
+
+const components = {
+  h1: HeadingOne,
+};
 
 export default function Course({ course }) {
   const router = useRouter();
@@ -11,7 +16,9 @@ export default function Course({ course }) {
     return <ErrorPage statusCode={404} />;
   }
 
-  return <ReactMarkdown>{course.content}</ReactMarkdown>;
+  return (
+    <ReactMarkdown components={components}>{course.content}</ReactMarkdown>
+  );
 }
 
 export async function getStaticProps({ params }) {
