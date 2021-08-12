@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 import { getCourses } from "../lib/api";
 
@@ -17,7 +18,7 @@ export default function Home({ courses }) {
       </nav>
 
       <main className="p-7 sm:px-14 max-w-4xl">
-        {courses.map(({ code, term, title, excerpt }) => (
+        {courses.map(({ code, term, title, excerpt, slug }) => (
           <div
             key={`${code}_${term}`}
             className="flex gap-x-7 text-sm sm:text-base"
@@ -27,7 +28,11 @@ export default function Home({ courses }) {
               <p className="text-gray-500 font-normal">{term}</p>
             </div>
             <div className="flex-1 flex flex-col gap-y-2">
-              <h2 className="font-bold font-display">{title}</h2>
+              <Link href={`/courses/${slug}`}>
+                <a>
+                  <h2 className="font-bold font-display">{title}</h2>
+                </a>
+              </Link>
               <p className="leading-relaxed">{excerpt}</p>
             </div>
           </div>
