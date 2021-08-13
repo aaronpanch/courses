@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown";
 import { getCourses } from "lib/api";
 
 export default function Home({ courses }) {
-  console.log(courses[0].excerpt);
   return (
     <div>
       <Head>
