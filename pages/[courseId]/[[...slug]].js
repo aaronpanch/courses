@@ -10,7 +10,7 @@ import proseStyles from "styles/prose.module.css";
 export default function Post({ course }) {
   const router = useRouter();
 
-  if (!router.isFallback && !course?.slug) {
+  if (!router.isFallback && !course?.courseId) {
     return <ErrorPage statusCode={404} />;
   }
 
