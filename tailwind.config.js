@@ -6,12 +6,12 @@ module.exports = {
       sans: ["Fira Sans", "sans-serif"],
       mono: ['"JetBrains Mono"', "monospace"],
       display: ["futura-pt-bold"],
-      body: ["Futura PT Sans", "sans-serif"]
+      body: ["Futura PT Sans", "sans-serif"],
     },
-    extend: {}
+    extend: {},
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [require("@tailwindcss/typography")],
 };
