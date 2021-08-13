@@ -21,23 +21,20 @@ export default function Home({ courses }) {
 
       <main className="p-7 max-w-xl mx-auto">
         {courses.map(({ code, term, title, excerpt, courseId }) => (
-          <div
-            key={`${code}_${term}`}
-            className="flex gap-x-7 text-sm sm:text-base"
-          >
-            <div>
-              <p className="font-mono text-lg sm:text-xl">{code}</p>
-              <p className="text-gray-500 font-normal">{term}</p>
-            </div>
-            <div className="flex-1 flex flex-col gap-y-2">
-              <Link href={`/${courseId}`}>
-                <a>
+          <Link href={`/${courseId}`} key={`${code}_${term}`}>
+            <a>
+              <div className="flex gap-x-7 text-sm sm:text-base p-4 -m-4 hover:bg-gray-100 rounded-lg">
+                <div>
+                  <p className="font-mono text-lg sm:text-xl">{code}</p>
+                  <p className="text-gray-500 font-normal">{term}</p>
+                </div>
+                <div className="flex-1 flex flex-col gap-y-2">
                   <h2 className="font-bold font-display">{title}</h2>
-                </a>
-              </Link>
-              <p className="leading-relaxed text-gray-700">{excerpt}</p>
-            </div>
-          </div>
+                  <p className="leading-relaxed text-gray-700">{excerpt}</p>
+                </div>
+              </div>
+            </a>
+          </Link>
         ))}
       </main>
     </div>
