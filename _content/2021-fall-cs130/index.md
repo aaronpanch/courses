@@ -51,7 +51,7 @@ Umeris vidi Pyrrha orbes oracula _et comae semper_, spernit, iam famulasque
 **accipit iactor** retentis, cui. Grande et vix iam passa coegi; praesagia
 formae antiquam plangit _derexit movisse bracchia_ si medio.
 
-Diu non loco aede ducar foret [enim](http://duriorvix.org/inpositamanu) erat
+Diu non loco aede ducar foret [enim](/2021-fall-cs130/new) erat
 ipse miserum vestigia induco belli iugales cavata. Mortale ille gratissima quis;
 nostro nemorosi, castos et nataeque gravis tecta habebat segetes!
 

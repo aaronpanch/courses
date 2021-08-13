@@ -20,7 +20,7 @@ export default function Home({ courses }) {
       </nav>
 
       <main className="p-7 max-w-xl mx-auto">
-        {courses.map(({ code, term, title, excerpt, slug }) => (
+        {courses.map(({ code, term, title, excerpt, courseId }) => (
           <div
             key={`${code}_${term}`}
             className="flex gap-x-7 text-sm sm:text-base"
@@ -30,12 +30,12 @@ export default function Home({ courses }) {
               <p className="text-gray-500 font-normal">{term}</p>
             </div>
             <div className="flex-1 flex flex-col gap-y-2">
-              <Link href={`/courses/${slug}`}>
+              <Link href={`/${courseId}`}>
                 <a>
                   <h2 className="font-bold font-display">{title}</h2>
                 </a>
               </Link>
-              <p className="leading-relaxed">{excerpt}</p>
+              <p className="leading-relaxed text-gray-700">{excerpt}</p>
             </div>
           </div>
         ))}
