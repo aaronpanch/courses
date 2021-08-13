@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { getCourses } from "lib/api";
 
 export default function Home({ courses }) {
+  console.log(courses[0].excerpt);
   return (
     <div>
       <Head>
@@ -31,7 +32,7 @@ export default function Home({ courses }) {
                 </div>
                 <div className="flex-1 flex flex-col gap-y-2">
                   <h2 className="font-bold font-display">{title}</h2>
-                  <div className="prose-sm">
+                  <div className="prose prose-sm">
                     <ReactMarkdown>{excerpt}</ReactMarkdown>
                   </div>
                 </div>
