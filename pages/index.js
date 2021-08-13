@@ -11,13 +11,15 @@ export default function Home({ courses }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="p-7 border-b sm:p-14 sticky top-0 bg-white">
-        <h1 className="font-display font-bold lowercase text-xl sm:text-4xl">
-          Courses
-        </h1>
+      <nav className="border-b sticky top-0 bg-white">
+        <div className="max-w-xl mx-auto p-7 sm:py-14">
+          <h1 className="font-display font-bold lowercase text-xl sm:text-4xl">
+            Courses
+          </h1>
+        </div>
       </nav>
 
-      <main className="p-7 sm:px-14 max-w-4xl">
+      <main className="p-7 max-w-xl mx-auto">
         {courses.map(({ code, term, title, excerpt, slug }) => (
           <div
             key={`${code}_${term}`}
