@@ -16,7 +16,7 @@ export default function Course({ course }) {
 
   return (
     <article
-      className={classNames("prose m-auto", proseStyles["prose-headings"])}
+      className={classNames("prose mx-auto", proseStyles["prose-headings"])}
     >
       <ReactMarkdown>{course.content}</ReactMarkdown>
     </article>
