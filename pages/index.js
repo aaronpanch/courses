@@ -30,7 +30,7 @@ export default function Home({ courses }) {
               <p className="text-gray-500 font-normal">{term}</p>
             </div>
             <div className="flex-1 flex flex-col gap-y-2">
-              <Link href={`/courses/${slug}`}>
+              <Link href={`/${slug}`}>
                 <a>
                   <h2 className="font-bold font-display">{title}</h2>
                 </a>
