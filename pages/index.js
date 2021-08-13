@@ -35,7 +35,7 @@ export default function Home({ courses }) {
                   <h2 className="font-bold font-display">{title}</h2>
                 </a>
               </Link>
-              <p className="leading-relaxed">{excerpt}</p>
+              <p className="leading-relaxed text-gray-700">{excerpt}</p>
             </div>
           </div>
         ))}

@@ -15,11 +15,16 @@ export default function Post({ course }) {
   }
 
   return (
-    <article
-      className={classNames("prose mx-auto", proseStyles["prose-headings"])}
-    >
-      <ReactMarkdown>{course.content}</ReactMarkdown>
-    </article>
+    <main className="p-7 sm:py-14">
+      <article
+        className={classNames(
+          "prose prose-sm mx-auto sm:prose",
+          proseStyles["prose-headings"]
+        )}
+      >
+        <ReactMarkdown>{course.content}</ReactMarkdown>
+      </article>
+    </main>
   );
 }
 
