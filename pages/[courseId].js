@@ -3,11 +3,11 @@ import ErrorPage from "next/error";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 
-import { getPostBySlug, listPosts } from "lib/api";
+import { getPostBySlug, listCourseIds } from "lib/api";
 
 import proseStyles from "styles/prose.module.css";
 
-export default function Post({ course }) {
+export default function CoursePage({ course }) {
   const router = useRouter();
 
   if (!router.isFallback && !course?.courseId) {
@@ -29,16 +29,16 @@ export default function Post({ course }) {
 }
 
 export async function getStaticProps({ params }) {
-  const course = await getPostBySlug(params.courseId, params.slug);
+  const course = await getPostBySlug(params.courseId);
   return { props: { course } };
 }
 
 export async function getStaticPaths() {
-  const courses = await listPosts();
+  const courses = await listCourseIds();
 
   return {
-    paths: courses.map(({ courseId, slug }) => ({
-      params: { courseId, slug: slug[0] === "index" ? null : slug },
+    paths: courses.map(({ courseId }) => ({
+      params: { courseId },
     })),
     fallback: false,
   };
