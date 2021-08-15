@@ -12,7 +12,7 @@ export default function Home({ courses }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="border-b sticky top-0 bg-white">
+      <nav className="border-b sticky top-0 bg-white z-10">
         <div className="max-w-xl mx-auto p-7 sm:py-14">
           <h1 className="font-display font-bold lowercase text-xl sm:text-4xl">
             Courses
