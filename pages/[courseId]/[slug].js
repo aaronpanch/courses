@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import Link from "next/link";
 import ErrorPage from "next/error";
 import ReactMarkdown from "react-markdown";
@@ -17,6 +18,12 @@ export default function Post({ course, post }) {
 
   return (
     <div>
+      <Head>
+        <title>
+          {post.title} | {course.code} {course.term} | Courses | Aaron Panchal
+        </title>
+      </Head>
+
       <nav className="border-b sticky top-0 bg-white z-10 p-7">
         <div className="flex max-w-xl sm:mx-auto">
           <Link href={`/${post.courseId}`}>

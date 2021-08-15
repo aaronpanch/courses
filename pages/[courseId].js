@@ -22,7 +22,6 @@ export default function CoursePage({ course }) {
         <title>
           {course.code} {course.term} | Courses | Aaron Panchal
         </title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <nav className="border-b sticky top-0 bg-white z-10 p-7">
