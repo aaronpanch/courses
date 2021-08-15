@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
+import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 
@@ -15,16 +16,34 @@ export default function CoursePage({ course }) {
   }
 
   return (
-    <main className="p-7 sm:py-14">
-      <article
-        className={classNames(
-          "prose prose-sm mx-auto sm:prose",
-          proseStyles["prose-headings"]
-        )}
-      >
-        <ReactMarkdown>{course.content}</ReactMarkdown>
-      </article>
-    </main>
+    <div>
+      <Head>
+        <title>
+          {course.code} {course.term} | Courses | Aaron Panchal
+        </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <nav className="border-b sticky top-0 bg-white z-10 p-7">
+        <div className="flex max-w-xl sm:mx-auto">
+          <h1 className="font-display font-bold lowercase text-xl">Courses</h1>
+        </div>
+      </nav>
+
+      <main className="p-7 sm:py-14">
+        <article
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className={classNames(
+            "prose prose-sm sm:mx-auto sm:prose",
+            proseStyles["prose-headings"]
+          )}
+        >
+          <ReactMarkdown>{course.content}</ReactMarkdown>
+        </article>
+      </main>
+    </div>
   );
 }
 
