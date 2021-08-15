@@ -7,30 +7,41 @@ import { getPostBySlug, listPosts } from "lib/api";
 
 import proseStyles from "styles/prose.module.css";
 
-export default function Post({ course }) {
+export default function Post({ course, post }) {
   const router = useRouter();
 
-  if (!router.isFallback && !course?.courseId) {
+  if (!router.isFallback && !post) {
     return <ErrorPage statusCode={404} />;
   }
 
   return (
-    <main className="p-7 sm:py-14">
-      <article
-        className={classNames(
-          "prose prose-sm mx-auto sm:prose",
-          proseStyles["prose-headings"]
-        )}
-      >
-        <ReactMarkdown>{course.content}</ReactMarkdown>
-      </article>
-    </main>
+    <div>
+      <nav className="border-b sticky top-0 bg-white z-10 p-7">
+        <div className="flex max-w-xl sm:mx-auto">
+          <h1 className="font-display font-bold text-xl">
+            {course.code}—{course.term}
+          </h1>
+        </div>
+      </nav>
+
+      <main className="p-7 sm:py-14">
+        <article
+          className={classNames(
+            "prose prose-sm mx-auto sm:prose",
+            proseStyles["prose-headings"]
+          )}
+        >
+          <ReactMarkdown>{post.content}</ReactMarkdown>
+        </article>
+      </main>
+    </div>
   );
 }
 
 export async function getStaticProps({ params }) {
-  const course = await getPostBySlug(params.courseId, params.slug);
-  return { props: { course } };
+  const course = await getPostBySlug(params.courseId);
+  const post = await getPostBySlug(params.courseId, params.slug);
+  return { props: { course, post } };
 }
 
 export async function getStaticPaths() {
