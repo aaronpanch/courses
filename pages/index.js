@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
 
 import { getCourses } from "lib/api";
+import Markdown from "components/Markdown";
 
 export default function Home({ courses }) {
   return (
@@ -35,7 +35,7 @@ export default function Home({ courses }) {
                   </div>
                 </div>
                 <div className="prose prose-sm sm:ml-12">
-                  <ReactMarkdown>{excerpt}</ReactMarkdown>
+                  <Markdown>{excerpt}</Markdown>
                 </div>
               </a>
             </Link>

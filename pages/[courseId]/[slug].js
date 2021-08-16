@@ -2,10 +2,10 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import ErrorPage from "next/error";
-import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 
 import { getPostBySlug, listPosts } from "lib/api";
+import Markdown from "components/Markdown";
 
 import proseStyles from "styles/prose.module.css";
 
@@ -43,7 +43,7 @@ export default function Post({ course, post }) {
             proseStyles["prose-headings"]
           )}
         >
-          <ReactMarkdown>{post.content}</ReactMarkdown>
+          <Markdown>{post.content}</Markdown>
         </article>
       </main>
     </div>
