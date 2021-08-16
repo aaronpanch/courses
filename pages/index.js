@@ -31,10 +31,10 @@ export default function Home({ courses }) {
                     <p className="text-gray-500 font-normal">{term}</p>
                   </div>
                   <div className="flex-1 flex flex-col gap-y-2">
-                    <h2 className="font-bold font-display">{title}</h2>
+                    <h2 className="font-bold font-display max-w-sm">{title}</h2>
                   </div>
                 </div>
-                <div className="prose prose-sm sm:ml-12">
+                <div className="prose prose-sm max-w-none">
                   <Markdown>{excerpt}</Markdown>
                 </div>
               </a>
