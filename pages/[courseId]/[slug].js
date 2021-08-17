@@ -39,7 +39,7 @@ export default function Post({ course, post }) {
       <main className="p-7 sm:py-14">
         <article
           className={classNames(
-            "prose prose-sm mx-auto sm:prose",
+            "prose prose-sm mx-auto sm:prose max-w-xl sm:max-w-xl",
             proseStyles["prose-headings"]
           )}
         >

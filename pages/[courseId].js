@@ -42,7 +42,7 @@ export default function CoursePage({ course, posts }) {
         <section>
           <article
             className={classNames(
-              "prose prose-sm sm:mx-auto sm:prose",
+              "prose prose-sm sm:mx-auto sm:prose max-w-xl sm:max-w-xl",
               proseStyles["prose-headings"]
             )}
           >
@@ -64,7 +64,7 @@ export default function CoursePage({ course, posts }) {
                         </p>
                       )}
                     </div>
-                    <div className="prose prose-sm">
+                    <div className="prose prose-sm max-w-none">
                       <Markdown>{post.excerpt}</Markdown>
                     </div>
                   </a>
