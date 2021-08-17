@@ -4,12 +4,14 @@ import Head from "next/head";
 import Link from "next/link";
 import classNames from "classnames";
 
-import { getPostBySlug, listCourseIds } from "lib/api";
+import { getPostBySlug, getCoursePosts, listCourseIds } from "lib/api";
 import Markdown from "components/Markdown";
 
 import proseStyles from "styles/prose.module.css";
 
-export default function CoursePage({ course }) {
+const formatDate = (date) => new Intl.DateTimeFormat("en-US").format(date);
+
+export default function CoursePage({ course, posts }) {
   const router = useRouter();
 
   if (!router.isFallback && !course?.courseId) {
@@ -37,17 +39,40 @@ export default function CoursePage({ course }) {
       </nav>
 
       <main className="p-7 sm:py-14">
-        <article
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className={classNames(
-            "prose prose-sm sm:mx-auto sm:prose",
-            proseStyles["prose-headings"]
-          )}
-        >
-          <Markdown>{course.content}</Markdown>
-        </article>
+        <section>
+          <article
+            className={classNames(
+              "prose prose-sm sm:mx-auto sm:prose",
+              proseStyles["prose-headings"]
+            )}
+          >
+            <Markdown>{course.content}</Markdown>
+          </article>
+        </section>
+
+        <section className="max-w-xl sm:mx-auto mt-9">
+          <ul className="divide-y">
+            {posts.map((post) => (
+              <li key={post.slug}>
+                <Link href={`/${course.courseId}/${post.slug}`}>
+                  <a className="flex flex-col gap-y-2 hover:bg-gray-100 rounded-lg p-4 -mx-4 sm:p-7 sm:-mx-7">
+                    <div className="flex gap-x-2 items-center justify-between">
+                      <h2 className="font-display text-lg">{post.title}</h2>
+                      {post.postedAt && (
+                        <p className="text-gray-500 font-normal">
+                          {formatDate(post.postedAt * 1000)}
+                        </p>
+                      )}
+                    </div>
+                    <div className="prose prose-sm">
+                      <Markdown>{post.excerpt}</Markdown>
+                    </div>
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       </main>
     </div>
   );
@@ -55,7 +80,8 @@ export default function CoursePage({ course }) {
 
 export async function getStaticProps({ params }) {
   const course = await getPostBySlug(params.courseId);
-  return { props: { course } };
+  const posts = await getCoursePosts(params.courseId);
+  return { props: { course, posts } };
 }
 
 export async function getStaticPaths() {

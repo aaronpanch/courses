@@ -24,7 +24,7 @@ export default function Home({ courses }) {
         <div className="sm:max-w-xl sm:mx-auto">
           {courses.map(({ code, term, title, excerpt, courseId }) => (
             <Link href={`/${courseId}`} key={`${code}_${term}`}>
-              <a className="flex flex-col gap-y-3 sm:gap-y-4text-sm sm:text-base hover:bg-gray-100 rounded-lg p-4 -m-4 sm:p-7 sm:-m-7">
+              <a className="flex flex-col gap-y-3 sm:gap-y-4 text-sm sm:text-base hover:bg-gray-100 rounded-lg p-4 -m-4 sm:p-7 sm:-m-7">
                 <div className="flex items-center gap-x-5 sm:gap-x-7">
                   <div>
                     <p className="font-mono text-lg sm:text-xl">{code}</p>
