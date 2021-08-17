@@ -1,3 +1,0 @@
-# New Page
-
-Hello World

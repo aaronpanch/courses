@@ -10,9 +10,18 @@ excerpt: "A survey and overview of the software development process. We'll work 
 
 #### Westmont College
 
-Winter Hall 206: Tuesday/Thursday 4:00—5:50pm\
+Winter Hall 206\
+Tuesday/Thursday 4:00—5:50pm\
 08/31/2021-12/16/2021
 
 ## Introduction
 
 You've probably talked about data structures and algorithms, along with various programming languages and syntaxes, but what else is involved with being a professional engineer? In this class we'll discuss those extra ideas: designing a robust product, writing the software to make it come alive (all the while chasing a moving target) and finally ensuring quality and deployment.
+
+## Thanks
+
+Special thanks to Dan Shank for his willingness to share past course content and ideas.
+
+## Posts
+
+Below you'll find a list of readings, ideas, and other course work and policies. Since this course is a bit of a work in progress so it will be updated regularly!
