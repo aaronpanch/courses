@@ -10,8 +10,8 @@ excerpt: "A survey and overview of the software development process. We'll work 
 
 #### Westmont College
 
-Winter Hall 206\
-Tuesday/Thursday 4:00—5:50pm\
+Winter Hall 206<br/>
+Tuesday/Thursday 4:00—5:50pm<br/>
 08/31/2021-12/16/2021
 
 ## Introduction
