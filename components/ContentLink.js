@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ContentLink({ href, node, ...props }) {
+export default function ContentLink({ href, ...props }) {
   return href.includes("http") ? (
     <a href={href} {...props} />
   ) : (

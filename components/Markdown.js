@@ -1,10 +1,11 @@
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "markdown-to-jsx";
+
 import ContentLink from "components/ContentLink";
 
-const components = {
-  a: ContentLink,
+const overrides = {
+  a: { component: ContentLink },
 };
 
 export default function Markdown({ node, children }) {
-  return <ReactMarkdown components={components}>{children}</ReactMarkdown>;
+  return <ReactMarkdown options={{ overrides }}>{children}</ReactMarkdown>;
 }
