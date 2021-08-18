@@ -26,8 +26,6 @@ Therefore, dishonesty of any kind (not limited to cheating, or plagiarism) are n
 
 ## Academic Accommodations
 
-Students who have been diagnosed with a disability (learning, physical/medical, or psychological) are strongly encouraged to contact the Disability Services office as early as possible to discuss appropriate accommodations for this course. Formal accommodations will only be granted for students whose
-disabilities have been verified by the Disability Services office. These accommodations may be necessary
-to ensure your full participation and the successful completion of this course. For more information, visit the [Disability Services Website](http://www.westmont.edu/_offices/disability).
+Students who have been diagnosed with a disability (learning, physical/medical, or psychological) are strongly encouraged to contact the Disability Services office as early as possible to discuss appropriate accommodations for this course. Formal accommodations will only be granted for students whose disabilities have been verified by the Disability Services office. These accommodations may be necessary to ensure your full participation and the successful completion of this course. For more information, visit the [Disability Services Website](http://www.westmont.edu/_offices/disability).
 
 [^1]: https://forms.westmont.edu/forms/syllabi/syllabus_archive/2020SP/CS-135-1.PDF
