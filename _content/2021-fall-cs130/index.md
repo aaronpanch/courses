@@ -49,4 +49,4 @@ Special thanks to Dan Shank for his willingness to share past course content and
 
 ## Posts
 
-Below you'll find a list of readings, ideas, and other course work and policies. Since this course is a bit of a work in progress so it will be updated regularly!
+Below you'll find a list of readings, ideas, and other course work and policies. This course is a bit of a work in progress so it will be updated regularly!
