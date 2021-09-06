@@ -14,6 +14,9 @@ Winter Hall 206<br/>
 Tuesday/Thursday 4:00—5:50pm<br/>
 08/31/2021-12/16/2021
 
+#### Office Hours
+45 minutes before class or by appointment.
+
 ## Introduction
 
 You've probably talked about data structures and algorithms, along with various programming languages and syntaxes, but what else is involved with being a professional engineer? In this class we'll discuss those extra ideas: designing a robust product, writing the software to make it come alive (all the while chasing a moving target) and finally ensuring quality and deployment.
