@@ -12,7 +12,7 @@ excerpt: "A survey and overview of the software development process. We'll work 
 
 Winter Hall 206<br/>
 Tuesday/Thursday 4:00—5:50pm<br/>
-08/31/2021-12/16/2021k
+08/31/2021-12/16/2021
 
 #### Office Hours
 45 minutes before class or by appointment.
