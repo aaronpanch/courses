@@ -31,6 +31,7 @@ This class is a project-based class. There will be one major project that all me
 ### Goals
 As a class, here are some of our goals (myself included!)
 
+- To ask good questions
 - To be better programmers
 - To be better communicators
 - To deploy a usable web application
