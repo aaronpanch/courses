@@ -10,7 +10,7 @@ excerpt: "A survey and overview of the software development process. We'll work 
 
 #### Westmont College
 
-Winter Hall 206<br/>
+Winter Hall 206 and Whittier Parking Lot Tent<br/>
 Tuesday/Thursday 4:00—5:50pm<br/>
 08/31/2021-12/16/2021
 
@@ -18,7 +18,7 @@ Tuesday/Thursday 4:00—5:50pm<br/>
 45 minutes before class or by appointment.
 
 #### Contact
-By email, or Slack
+By email, or Slack (preferred)
 
 ## Introduction
 
