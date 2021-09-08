@@ -10,7 +10,7 @@ excerpt: "A survey and overview of the software development process. We'll work 
 
 #### Westmont College
 
-Winter Hall 206<br/>
+Winter Hall 206 and Whittier Parking Lot Tent<br/>
 Tuesday/Thursday 4:00—5:50pm<br/>
 08/31/2021-12/16/2021
 
@@ -18,7 +18,7 @@ Tuesday/Thursday 4:00—5:50pm<br/>
 45 minutes before class or by appointment.
 
 #### Contact
-By email, or Slack
+By email, or Slack (preferred)
 
 ## Introduction
 
@@ -26,11 +26,12 @@ You've probably talked about data structures and algorithms, along with various 
 
 ## Class Format
 
-This class is a project-based class. There will be one major project that all members will contribute to for the majority of the semester.  We'll have occasional readings that will help us on our software engineering journey.  As an initial team agreement, we've decided to meet in-person for the semester.
+This class is a project-based class. There will be one major project that all members will contribute to for the majority of the semester.  We'll have occasional readings that will help us on our software engineering journey.  As an initial team agreement, we've decided to meet in-person for the semester.  Being a member of a team means contributing in meaningful ways, but also showing up for your team—that means that attendance is essential.
 
 ### Goals
 As a class, here are some of our goals (myself included!)
 
+- To ask good questions (this is super important!)
 - To be better programmers
 - To be better communicators
 - To deploy a usable web application
