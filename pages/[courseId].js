@@ -81,6 +81,9 @@ export default function CoursePage({ course, posts }) {
 export async function getStaticProps({ params }) {
   const course = await getPostBySlug(params.courseId);
   const posts = await getCoursePosts(params.courseId);
+
+  posts.sort((post1, post2) => post2.postedAt - post1.postedAt);
+
   return { props: { course, posts } };
 }
 
